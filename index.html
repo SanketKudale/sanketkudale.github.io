@@ -8,6 +8,9 @@
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -27,7 +30,10 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/styles.css" rel="stylesheet" />
+	
   </head>
+  
   <body>
 
 	<div id="colorlib-page">
@@ -36,12 +42,12 @@
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
 					<li class="colorlib-active" id="menu1" onclick="menuactiva('one')"><a href="#Home">Home</a></li>
-					<li id="menu2"><a href="#Qualification" onclick="menuactiva('two')">Qualification</a></li>
-					<li id="menu3"><a href="#Skills" onclick="menuactiva('three')">Skills</a></li>
-					<li id="menu4"><a href="#WorkExp" onclick="menuactiva('four')">Work Experience</a></li>
-					<li id="menu5"><a href="#Projects" onclick="menuactiva('five')">Projects</a></li>
-					<li id="menu6"><a href="#Hobbies" onclick="menuactiva('six')">Interests and Hobbies</a></li>
-					<li id="menu7"><a href="#Contact" onclick="menuactiva('seven')">Contact</a></li>
+					<li id="menu2" onclick="menuactiva('two')"><a href="#Qualification">Qualification</a></li>
+					<li id="menu3" onclick="menuactiva('three')"><a href="#Skills">Skills</a></li>
+					<li id="menu4" onclick="menuactiva('four')"><a href="#WorkExp">Work Experience</a></li>
+					<li id="menu5" onclick="menuactiva('five')"><a href="#Projects">Projects</a></li>
+					<li id="menu6" onclick="menuactiva('six')"><a href="#Hobbies">Interests and Hobbies</a></li>
+					<li id="menu7" onclick="menuactiva('seven')"><a href="#Contact">Contact</a></li>
 					
 				</ul>
 			</nav>
@@ -82,10 +88,13 @@
 								<div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h4>2009-2011</h4>
-										<h4 class="subheading">Our Humble Beginnings</h4>
+										<h4>Pssing Year 2015</h4>
+										<h4 class="subheading">SSC</h4>
 									</div>
-									<div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+									<div class="timeline-body"><p class="text-muted">--Maharashtra Board<br>
+• <u>SCHOOL</u>:&nbsp;&nbsp;&nbsp; A.W. Sindhu Vidya Bhavan<br>
+• <u>ACHIEVEMENTS</u>: &nbsp;&nbsp;&nbsp;Was made House Captain and after being the Captain successfully won the house trophy of the year, designed and created a website for school, ranked first and Awarded Durga Devi Trust Scholarship for class 8th, 9th and 10th.<br>
+• <u>Percentage</u>: 81.80%</p></div>
 								</div>
 							</li>
 							<li class="timeline-inverted">
@@ -183,14 +192,15 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
  
 	<script>
 	
 		function deactivate(id){
-			document.getElementById("id").className = "";
+			document.getElementById(id).className = "";
 		}
 		function activate(id){
-			document.getElementById("id").className = "colorlib-active";
+			document.getElementById(id).className = "colorlib-active";
 		}
 		
 		function menuactiva(choice1){
