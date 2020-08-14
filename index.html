@@ -35,13 +35,13 @@
 			<center style="margin-top: 10em;">
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
-					<li class="colorlib-active"><a href="#Home">Home</a></li>
-					<li><a href="#Qualification">Qualification</a></li>
-					<li><a href="">Skills</a></li>
-					<li><a href="workexp.html">Work Experience</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="hobbies.html">Interests and Hobbies</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li class="colorlib-active" id="menu1" onclick="menuactiva('one')"><a href="#Home">Home</a></li>
+					<li id="menu2"><a href="#Qualification" onclick="menuactiva('two')">Qualification</a></li>
+					<li id="menu3"><a href="#Skills" onclick="menuactiva('three')">Skills</a></li>
+					<li id="menu4"><a href="#WorkExp" onclick="menuactiva('four')">Work Experience</a></li>
+					<li id="menu5"><a href="#Projects" onclick="menuactiva('five')">Projects</a></li>
+					<li id="menu6"><a href="#Hobbies" onclick="menuactiva('six')">Interests and Hobbies</a></li>
+					<li id="menu7"><a href="#Contact" onclick="menuactiva('seven')">Contact</a></li>
 					
 				</ul>
 			</nav>
@@ -124,7 +124,7 @@
 			</div>
 		</div>    
     </section>
-    <footer class="ftco-footer ftco-bg-dark ftco-section" style="height:10em;">
+    <footer class="ftco-footer ftco-bg-dark ftco-section" id="Contact" style="height:10em;">
 
 	  
 		<center>
@@ -183,6 +183,91 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+ 
+	<script>
+	
+		function deactivate(id){
+			document.getElementById("id").className = "";
+		}
+		function activate(id){
+			document.getElementById("id").className = "colorlib-active";
+		}
+		
+		function menuactiva(choice1){
+			switch(choice1){
+				case "one":
+					activate("menu1");
+					deactivate("menu2");
+					deactivate("menu3");
+					deactivate("menu4");
+					deactivate("menu5");
+					deactivate("menu6");
+					deactivate("menu7");
+					break;
+					
+				case "two":
+					activate("menu2");
+					deactivate("menu1");
+					deactivate("menu3");
+					deactivate("menu4");
+					deactivate("menu5");
+					deactivate("menu6");
+					deactivate("menu7");
+					break;
+					
+				case "three":
+					activate("menu3");
+					deactivate("menu1");
+					deactivate("menu2");
+					deactivate("menu4");
+					deactivate("menu5");
+					deactivate("menu6");
+					deactivate("menu7");
+					break;
+					
+				case "four":
+					activate("menu4");
+					deactivate("menu1");
+					deactivate("menu2");
+					deactivate("menu3");
+					deactivate("menu5");
+					deactivate("menu6");
+					deactivate("menu7");
+					break;
+					
+				case "five":
+					activate("menu5");
+					deactivate("menu1");
+					deactivate("menu2");
+					deactivate("menu3");
+					deactivate("menu4");
+					deactivate("menu6");
+					deactivate("menu7");
+					break;
+					
+				case "six":
+					activate("menu6");
+					deactivate("menu1");
+					deactivate("menu2");
+					deactivate("menu3");
+					deactivate("menu4");
+					deactivate("menu5");
+					deactivate("menu7");
+					break;
+					
+				case "seven":
+					activate("menu7");
+					deactivate("menu1");
+					deactivate("menu2");
+					deactivate("menu3");
+					deactivate("menu4");
+					deactivate("menu5");
+					deactivate("menu6");
+					break;
+			}
+		}
+		
+	</script>
+ 
   </body>
 </html>
