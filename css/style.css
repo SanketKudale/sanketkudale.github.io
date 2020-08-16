@@ -8035,7 +8035,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 14px;
   background: #132238;
-  padding: 6em 0; }
+  padding: 2em 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: .1em; }
@@ -8065,7 +8065,7 @@ textarea.form-control {
     color: #000000; }
   .ftco-footer .categories li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 10px 0; }
+	}
     .ftco-footer .categories li a {
       color: rgba(255, 255, 255, 0.5) !important; }
       .ftco-footer .categories li a span {
